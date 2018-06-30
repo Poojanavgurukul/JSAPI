@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API Call</title>
+</head>
+<body>
+	<h1 style="text-align: center; color: blue; font-size: 40px;">My google Map</h1>
+	<div id="googlemap" style="width: 100%;height:500px; border:2px solid black"></div>
+</body>
+<script type="text/javascript">
+	function myMap(){
+		var mapProperty ={
+			center:new google.maps.LatLng(28.7041,77.1025),
+			zoom:5,
+	};
+		var map=new google.maps.Map(document.getElementById('googlemap'),mapProperty);
+		var obj= {lat:28.7041,lng:77.1025};
+	    // var marker = new google.maps.Marker({position:mapProperty});
+		 // marker.setMap(googlemap);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVBujEd0ne_qz_dLHly3NUZuRr_Dv6GhY&callback=myMap"></script>
+</html>
